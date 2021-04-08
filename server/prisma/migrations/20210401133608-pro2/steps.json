@@ -1,0 +1,56 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteModel",
+      "model": "Post"
+    },
+    {
+      "tag": "CreateField",
+      "model": "User",
+      "field": "tweets",
+      "type": "Tweet",
+      "arity": "List"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "User",
+      "field": "posts"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "User",
+      "field": "Tweet"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Profile",
+      "field": "location",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Profile",
+      "field": "loction"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Tweet",
+      "field": "title",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Tweet",
+      "field": "createdAt"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Tweet",
+      "field": "content",
+      "arity": "Optional"
+    }
+  ]
+}
