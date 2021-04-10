@@ -1,2 +1,3 @@
 # react-graphql-project
-Twitter Clone Project with GraphQL and Ts&amp;React.
+FrontEnd/React,Apollo-Client,Typescript
+Backend/NodeJs,GraphQL,Prisma,Postgres,Typescript
