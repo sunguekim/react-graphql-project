@@ -70,7 +70,7 @@ function UpdateProfile() {
     data.append("file", files[0])
     data.append("upload_preset", "darwin")
     setImageLoading(true)
-    const res = await fetch("https://api.cloudinary.com/v1_1/dczydczcm/image/upload", {
+    const res = await fetch("secret", {
       method: "POST",
       body: data,
     })
